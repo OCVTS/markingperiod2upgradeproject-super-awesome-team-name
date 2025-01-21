@@ -1,6 +1,7 @@
 let userInput = '';
 let userOperator = '';
 let num1 = 0;
+let num2 = 0;
 
 const orderDisplay = document.getElementById('Display');
 
@@ -44,7 +45,7 @@ userInput ='';
 
 /********************** calculate function  *********************/
 function calculate() {
-     let num2 = parseInt(userInput);
+     let num2 = parseFloat(userInput);
 
     //  The way we look can calculate the 2 numbers for the answer , depending on the operator that was put in //
      switch(userOperator) {
@@ -60,5 +61,9 @@ function calculate() {
             case '/':
             orderDisplay.innerHTML = divide(num1, num2);
             break;
-     }
-}
+            case '%':
+                calculatePercentage();  // Call percentage function if operator is %
+                return; 
+        }
+    }
+
