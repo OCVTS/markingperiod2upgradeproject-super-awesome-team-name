@@ -1,8 +1,8 @@
 /* the color and text change of the Header section of the website */
 #header {
     grid-area: header;
-    background-color:black;
-    color: RED;
+    background-color:lightgray;
+    color: blue;
     text-align: center;
     font-weight: bold;
     font-weight: 900;
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: darkgrey;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,7 @@ body {
 /* The creation of the Calculator the 4 by 4 grid of the calculator  */
 #grid-container {
     display:grid;
-    border: 5px solid darkred;
+    border: 5px solid darkblue;
     grid-template-columns: repeat(4, 1fr);
  }
 
@@ -42,9 +42,9 @@ body {
  /* The place where the Math is being printed */
  #Display {
     padding:16px;
-    border: 5px solid darkred;
-    background-color: black;
-    color: white;
+    border: 5px solid blue;
+    background-color: lightgrey;
+    color: black;
     font-weight: bold;
     font-weight: 900;
     font-size: 50px;
@@ -64,8 +64,8 @@ body {
    /* The  way that the Number and Operator look */
 button {
     padding:  32px 16px;
-    background-color: black;
-    color: white;
+    background-color: lightgray;
+    color: black;
     font-weight: bold;
     font-weight: 900;
     font-size: 50px;

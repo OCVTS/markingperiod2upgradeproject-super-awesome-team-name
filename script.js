@@ -43,6 +43,12 @@ orderDisplay.innerHTML = '0';
 userInput ='';
 }
 
+
+   /********************** Percentage function  *********************/
+   function calculatePercentage(value , total) {
+    return(value / total) * 100;
+}
+
 /********************** calculate function  *********************/
 function calculate() {
      let num2 = parseFloat(userInput);
