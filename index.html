@@ -49,15 +49,17 @@
         <button class ="grid-item" onclick ="operator('+')"> + </button>
 
 
-        <!-- Only works with a equation , and doesnt put the number correctly in the Calc Bar -->
-<button class ="grid-item" id="percentageButton"onclick="calculatePercentage()"> % </button>
-
+        <!-- Only works with a equation , doesnt give decimal point -->
+        <button class ="grid-item" onclick ="calculatePercentage('%')"> % </button>
+        <button class ="grid-item" onclick ="operator('^')"> ^ </button>
+        <button class ="grid-item" onclick ="operator('<')"> < </button>
+        <button class ="grid-item" onclick ="operator('>')"> > </button>
 
       </div>
       </section>
       
     </main>
-    <footer> </footer>
+    <footer> Calculator </footer>
      <script src="script.js"></script>
   </body>
 </html>

@@ -46,8 +46,24 @@ userInput ='';
 
    /********************** Percentage function  *********************/
    function calculatePercentage(value , total) {
-    return(value / total) * 100;
+    let (value / total) * 100;  
+    return parseFloat.toFixed(2); // 2 decimals
+
 }
+
+//  /********************** lessthan  function  *********************/   MORE WORK = AKA NOT DONE YET
+   
+function lessthan(num1, num2)  {
+return num1 > num2;
+
+}
+
+// /********************** Greaterthan function  *********************/ MORE WORK = AKA NOT DONE YET
+   
+function Greaterthan(num1, num2)  {
+    return num1 < num2;
+    
+    }
 
 /********************** calculate function  *********************/
 function calculate() {
@@ -68,8 +84,9 @@ function calculate() {
             orderDisplay.innerHTML = divide(num1, num2);
             break;
             case '%':
-                calculatePercentage();  // Call percentage function if operator is %
-                return; 
+                let result = calculatePercentage(num1, num2);  
+                orderDisplay.innerHTML = result;  // Gives the answer
+                break;
         }
     }
 
