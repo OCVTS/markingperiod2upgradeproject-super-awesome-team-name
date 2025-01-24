@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Calaculator </title>
+    <title> Calculator </title>
     <link href="style.css" rel='stylesheet'/>
   </head>
  
   <body>
     <main id ="grid-layout">
       <section id = 'header'> 
-        <h1> Calaculator </h1>
+        <h1> Calculator(Upgraded) </h1>
        </section>
 
        <section id = 'main'> 
@@ -52,14 +52,19 @@
         <!-- Only works with a equation , doesnt give decimal point -->
         <button class ="grid-item" onclick ="calculatePercentage('%')"> % </button>
         <button class ="grid-item" onclick ="operator('^')"> ^ </button>
+
+        <!-- Still dont work  -->
         <button class ="grid-item" onclick ="operator('<')"> < </button>
-        <button class ="grid-item" onclick ="operator('>')"> > </button>
+        <button class ="grid-item" onclick ="operator('>')"> > </button> 
+
+        <button class ="grid-item" onclick ="history('⌛')"> hist </button>
 
       </div>
       </section>
       
     </main>
-    <footer> Calculator </footer>
+    <footer></footer>
+
      <script src="script.js"></script>
   </body>
 </html>

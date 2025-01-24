@@ -14,7 +14,7 @@ orderDisplay.innerHTML = userInput;
 
 function operator(op) {
     userOperator = op;
-    num1 = parseInt(userInput);  // converts string into number //
+    num1 = parseFloat(userInput);  // converts string into number //
     userInput = '';
 }
 
@@ -50,21 +50,27 @@ userInput ='';
     return parseFloat.toFixed(2); // 2 decimals
 
 }
-
-//  /********************** lessthan  function  *********************/   MORE WORK = AKA NOT DONE YET
-   
-function lessthan(num1, num2)  {
-return num1 > num2;
+ /********************** Power Of^ function  *********************/
+ function power(num1, num2) { 
+    return Math.pow(num1 , num2);
 
 }
+
 
 // /********************** Greaterthan function  *********************/ MORE WORK = AKA NOT DONE YET
    
 function Greaterthan(num1, num2)  {
-    return num1 < num2;
+    return num1 > num2;
     
     }
 
+//  /********************** lessthan  function  *********************/   MORE WORK = AKA NOT DONE YET
+   
+function lessthan(num1, num2)  {
+    return num2 > num1;
+    
+    }
+    
 /********************** calculate function  *********************/
 function calculate() {
      let num2 = parseFloat(userInput);
@@ -87,6 +93,18 @@ function calculate() {
                 let result = calculatePercentage(num1, num2);  
                 orderDisplay.innerHTML = result;  // Gives the answer
                 break;
+            case '^':
+                orderDisplay.innerHTML = power(num1, num2);
+                break;
+            case '>':
+                orderDisplay.innerHTML = Greaterthan(num1, num2);
+                break;
+            case '<':
+                orderDisplay.innerHTML = lessthan(num1, num2);
+                break;
+            default:
+                orderDisplay.innerHTML = Error;
+                break; 
         }
     }
 

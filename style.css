@@ -1,33 +1,31 @@
 /* the color and text change of the Header section of the website */
 #header {
-    height:10vh;
+    max-height:20vh;
     margin: 0;
     padding: 0;
     grid-area: header;
     background-color:lightgray;
     color: blue;
-    text-align: center;
     font-weight: bold;
-    font-weight: 900;
-    font-size: 50px;
-    text-align: ;
+    font-weight: 450;
+    font-size: 40px;
+    text-align: center;
 }
+#header:hover {
+    background-color: black; /* hover = color flash */
+    color: red; /*  hover = text color flash */
+}
+
 
 #main {
     grid-area: main;
-   
 }
+
 
 body {
-    height:10vh;
+    max-height:10vh;
    max-width:100vw;
     background-color: darkgrey;
-    margin: 0;
-    padding: 0;
-}
-
-body:hover {
-    background-color: black;
     margin: 0;
     padding: 0;
 }
@@ -35,7 +33,7 @@ body:hover {
 /* The creation of the Calculator the 4 by 4 grid of the calculator  */
 #grid-container {
     display:grid;
-    border: 5px solid darkblue;
+    border: 51px solid darkblue;
     grid-template-columns: repeat(4, 1fr);
  }
 
@@ -54,13 +52,12 @@ body:hover {
  /* The place where the Math is being printed */
  #Display {
     padding:16px;
-    border: 5px solid blue;
+    border: 10px solid darkblue;
     background-color: lightgrey;
     color: black;
     font-weight: bold;
     font-weight: 900;
     font-size: 50px;
-  
     min-height: 30px;
 }
 
@@ -73,23 +70,28 @@ body:hover {
     
    }
 
+   #Display:hover {
+    background-color: black; /* hover = color flash */
+    color: red; /*  hover = text color flash */
+}
+
    /* The  way that the Number and Operator look */
 button {
     padding:  32px 16px;
     background-color: lightgray;
-    color: darkblue;
+    color: black;
     font-weight: bold;
     font-weight: 900;
     font-size: 50px;
 }
 
 button:hover {
-    background-color: yellow; /* hover = color flash */
+    background-color: black; /* hover = color flash */
     color: red; /*  hover = text color flash */
 }
 
 
 button:active {
-    background-color: red; /* click = color flash */
-    color: yellow; /*  click = text color flash */
+    background-color: yellow; /* click = color flash */
+    color: black; /*  click = text color flash */
 }
