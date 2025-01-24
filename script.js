@@ -46,8 +46,8 @@ userInput ='';
 
    /********************** Percentage function  *********************/
    function calculatePercentage(value , total) {
-    let (value / total) * 100;  
-    return parseFloat.toFixed(2); // 2 decimals
+    let percentage = (value / total) * 100;
+    return percentage.toFixed(2); // 2 decimals
 
 }
  /********************** Power Of^ function  *********************/
