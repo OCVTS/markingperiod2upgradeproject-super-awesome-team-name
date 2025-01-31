@@ -8,61 +8,23 @@
   </head>
  
   <body>
-    <main id ="grid-layout">
-      <section id = 'header'> 
-        <h1> Calculator(Upgraded) </h1>
-       </section>
+    <header>
+        <h1> Connor Campanile </h1>
+    </header>
+  
+    <main>
+        <a href ="indexCalc.html"> <h2> Calculator Project </h2> </a>
+        <h3> Project Description </h3>
+        <p> My project that I have done is for Calculator. You press the numbers that you want to use and add a operator in and and answer will appear in the middle.
+           This calculator has the normal function of + - * =, and the number 0-9.
+           It also has addition functions of % ^ > < and also History.
+           </p>
 
-       <section id = 'main'> 
-        <div id="Screen">
-        <div id="Display">
-        <p> </p> 
-      </div>
-
-      <!-- the items inside of the grid for the creation of the Calculator -->
-      <div id="grid-container">
-        <button class ="grid-item" onclick ="addToNum('7')"> 7 </button>
-        <button class ="grid-item" onclick ="addToNum('8')"> 8 </button>
-        <button class ="grid-item" onclick ="addToNum('9')"> 9 </button>
-        <button class ="grid-item" onclick ="operator('/')"> ÷ </button>
-
-
-        <button class ="grid-item" onclick ="addToNum('4')">  4 </button>
-        <button class ="grid-item" onclick ="addToNum('5')"> 5 </button>
-        <button class ="grid-item" onclick ="addToNum('6')"> 6 </button>
-        <button class ="grid-item" onclick ="operator('*')"> * </button>
-
-        <button class ="grid-item" onclick ="addToNum('1')"> 1 </button>
-        <button class ="grid-item" onclick ="addToNum('2')"> 2 </button>
-        <button class ="grid-item" onclick ="addToNum('3')"> 3 </button>
-        <button class ="grid-item" onclick ="operator('-')"> - </button>
-               
-       
-        <button class ="grid-item" onclick ="addToNum('0')"> 0 </button>
-
-        <!-- Give them seperate id due to there function  -->
-        <button class ="grid-item" id="clearButton" onclick="clr()"> C </button>
-        <button id="submitButton"id="submitButton" onclick = "calculate()"> = </button>
-
-
-        <!-- the items inside of the grid for the creation of the Calculator -->
-        <button class ="grid-item" onclick ="operator('+')"> + </button>
-
-
-        <!-- Only works with a equation , doesnt give decimal point -->
-        <button class ="grid-item" onclick ="calculatePercentage('%')"> % </button>
-        <button class ="grid-item" onclick ="operator('^')"> ^ </button>
-
-        <!-- Still not work / work 100%  -->
-        <button class ="grid-item" onclick ="operator('<')"> < </button>
-        <button class ="grid-item" onclick ="operator('>')"> > </button> 
-
-        <button class ="grid-item" onclick ="history('⌛')"> hist </button>
-
-      </div>
-      </section>
-      
+        <h4> Project Process </h4>
+        <p> the process of this project had alot to do with reseach and looking at other function of operators in this project.</p>
     </main>
+     
+      
     <footer></footer>
 
      <script src="script.js"></script>
