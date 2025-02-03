@@ -21,44 +21,47 @@
 
       <!-- the items inside of the grid for the creation of the Calculator -->
       <div id="grid-container">
+        <button class ="grid-item" onclick ="history('⌛')"> hist </button>
+
+        <!-- Only works with a equation , doesnt give decimal point -->
+<button class ="grid-item" onclick ="operator('^')"> ^ </button>
+
+              <!-- Only works with a equation , doesnt give decimal point -->
+        <button class ="grid-item" onclick ="calculatePercentage('%')"> % </button>
+
+          <button class ="grid-item" id="clearButton" onclick="clr()"> C </button>
+        <!-- Top most row of numbers -->
+
         <button class ="grid-item" onclick ="addToNum('7')"> 7 </button>
         <button class ="grid-item" onclick ="addToNum('8')"> 8 </button>
         <button class ="grid-item" onclick ="addToNum('9')"> 9 </button>
+
         <button class ="grid-item" onclick ="operator('/')"> ÷ </button>
-
-
+        
         <button class ="grid-item" onclick ="addToNum('4')">  4 </button>
         <button class ="grid-item" onclick ="addToNum('5')"> 5 </button>
         <button class ="grid-item" onclick ="addToNum('6')"> 6 </button>
+
         <button class ="grid-item" onclick ="operator('*')"> * </button>
+
 
         <button class ="grid-item" onclick ="addToNum('1')"> 1 </button>
         <button class ="grid-item" onclick ="addToNum('2')"> 2 </button>
         <button class ="grid-item" onclick ="addToNum('3')"> 3 </button>
         <button class ="grid-item" onclick ="operator('-')"> - </button>
                
-       
         <button class ="grid-item" onclick ="addToNum('0')"> 0 </button>
+     
+        <button class ="grid-item" onclick ="operator('*')"> * </button>
 
-        <!-- Give them seperate id due to there function  -->
-        <button class ="grid-item" id="clearButton" onclick="clr()"> C </button>
-        <button id="submitButton"id="submitButton" onclick = "calculate()"> = </button>
-
-
-        <!-- the items inside of the grid for the creation of the Calculator -->
-        <button class ="grid-item" onclick ="operator('+')"> + </button>
-
-
-        <!-- Only works with a equation , doesnt give decimal point -->
-        <button class ="grid-item" onclick ="calculatePercentage('%')"> % </button>
-        <button class ="grid-item" onclick ="operator('^')"> ^ </button>
-
-        <!-- Still not work / work 100%  -->
-        <button class ="grid-item" onclick ="operator('<')"> < </button>
-        <button class ="grid-item" onclick ="operator('>')"> > </button> 
-
-        <button class ="grid-item" onclick ="history('⌛')"> hist </button>
-
+        
+<button id="submitButton"id="submitButton" onclick = "calculate()"> = </button>
+<button class ="grid-item" onclick ="operator('+')"> + </button>
+ 
+      <!-- Still not work / work 100%  -->
+      <button class ="grid-item" onclick ="operator('<')"> < </button>
+      <button class ="grid-item" onclick ="operator('>')"> > </button> 
+        
       </div>
       </section>
       
@@ -68,4 +71,3 @@
      <script src="script.js"></script>
   </body>
 </html>
-  
