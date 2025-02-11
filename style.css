@@ -2,7 +2,6 @@
 #header {
     max-height:20vh;
     margin: 0;
-    padding: 0;
     grid-area: header;
     background-color:lightgray;
     color: blue;
@@ -16,11 +15,9 @@
     color: red; /*  hover = text color flash */
 }
 
-
 #main {
     grid-area: main;
 }
-
 
 body {
     max-height:10vh;
@@ -37,13 +34,13 @@ body {
 /* The creation of the Calculator the 4 by 4 grid of the calculator  */
 #grid-container {
     display:grid;
-    border: 51px solid darkblue;
+    border: 40px solid darkblue;
     grid-template-columns: repeat(4, 1fr);
  }
 
  #grid-layout {
     display: grid;
-    padding:16px;
+    padding: 16px;
     grid-template-rows: auto lfr auto;
     grid-template-columns: 15% 70% 15%;
     grid-template-areas:
@@ -81,7 +78,7 @@ body {
 
    /* The  way that the Number and Operator look */
 button {
-    padding:  32px 16px;
+    padding:  16px 16px;
     background-color: lightgray;
     color: black;
     font-weight: bold;
